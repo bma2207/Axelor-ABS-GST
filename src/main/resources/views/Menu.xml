@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_5.0.xsd">
+	<menuitem name="Gst-root" title="GST" icon="fa-user"
+		icon-background="#2fa042" if="__config__.app.isApp('GST')" tag="GST Taxs" />
+	<menuitem name="gst-root-address" parent="Gst-root" title="state"
+		action="gst.root.state" />
+	<action-view name="gst.root.state" title="State"
+		model="com.axelor.apps.gst.db.State">
+		<view type="form" name="state-form" />
+	</action-view>
+	<menuitem name="welcome" order="-101" title="Dashboards" icon="fa-dashboard"
+		icon-background="blue" parent="Gst-root" action="welcome"/>
+	<action-view name="welcome" title="Welcome!">
+		<view type="dashboard" name="welcomes.dashboard"/>
+	</action-view>
+
+</object-views>

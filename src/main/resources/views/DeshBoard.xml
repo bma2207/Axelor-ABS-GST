@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_5.1.xsd">
+<dashboard id="gst-welcomes.dashboard" name="welcomes.dashboard" title="Welcome!">
+ <dashlet action="chart:chart.Unpaid.invoice.party"/> 
+ <dashlet action="chart:chart.paid.invoice.party"/> 
+  <dashlet colSpan="12" action="invoice.data"/>
+</dashboard>
+<action-view name="invoice.data" title="Invoice" model="com.axelor.apps.account.db.Invoice">
+<view type="grid" name="invoice-grid"/>
+<domain>self.statusSelect = 2 AND self.dateTime &lt;= :date_check  </domain>
+<context name="date_check" expr="eval:__datetime__.minusMonths(1)"/> 
+</action-view>
+</object-views>

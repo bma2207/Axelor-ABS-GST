@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+	<wb-module deploy-name="axelor-gst">
+		<wb-resource deploy-path="/" source-path="src/main/resources"/>
+		<wb-resource deploy-path="/" source-path="build/src-gen/resources"/>
+		<wb-resource deploy-path="/" source-path="src/main/java"/>
+		<wb-resource deploy-path="/" source-path="build/src-gen/java"/>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-base/axelor-base">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-admin/axelor-admin">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-exception/axelor-exception">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-tool/axelor-tool">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-message/axelor-message">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-account/axelor-account">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-supplychain/axelor-supplychain">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-purchase/axelor-purchase">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-sale/axelor-sale">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-crm/axelor-crm">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/axelor-stock/axelor-stock">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+	</wb-module>
+</project-modules>
